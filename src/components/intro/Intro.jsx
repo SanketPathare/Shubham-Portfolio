@@ -1,5 +1,5 @@
 import "./intro.css";
-
+import Experience from "../experience/Experience";
 import { FaAward } from "react-icons/fa";
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -8,7 +8,7 @@ import Img from "../../assets/Shubham Tawale.png"
 
 const Intro = () => {
   return (
-    <section id="about">
+    <section >
       <h5>Get to know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
@@ -45,6 +45,7 @@ const Intro = () => {
           </a>
         </div>
       </div>
+      <Experience/>
     </section>
   );
 };

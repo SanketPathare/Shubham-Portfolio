@@ -2,11 +2,13 @@ header {
   height: 100%;
   padding-top: 10rem;
   overflow: hidden; 
-  margin-bottom: 20rem;
- 
+  margin-top: 20px;
+  margin-bottom: 265px;
 }
 
 .header__container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   height: 100%;
   position: relative;

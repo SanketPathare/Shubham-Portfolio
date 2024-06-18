@@ -1,20 +1,23 @@
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
-import Topbar from "./components/topbar/Topbar";
 import Intro from "./components/intro/Intro";
-import Experience from "./components/experience/Experience";
 import Projects from "./components/Projects/Projects"
 import Contact from "./components/contact/Contact"
+import Navbar from "./components/Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
+import "./App.css"
 const App = () => {
   return (
     <>
-      <Header />
-      <Topbar />
-      <Intro />
-      <Experience />
-      <Projects/>
-      <Contact/>
-      <Footer />
+      <Navbar/>
+      <Routes>
+          <Route path="/" element={<Header />} />
+          <Route path="/About" element={<Intro />} />
+          <Route path="/Project" element={<Projects />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+    
     </>
   );
 };
