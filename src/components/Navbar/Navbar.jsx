@@ -12,12 +12,12 @@ function Navbar() {
     <>
       <div className="navbar">
         <h3 className="logo">S<b>T</b></h3>
-        <ul className="nav-container" ref={navRef}>
+        <ul className="nav-container" ref={navRef} onClick={showNavbar}>
           <Link to={"/"}><li>Home</li></Link>
           <Link to={"/about"}><li>About</li></Link> 
           <Link to={"/project"}><li>Projects</li></Link> 
           <Link to={"/contact"}><li>Contact</li></Link> 
-          <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <button className="nav-btn nav-close-btn" >
           <FaTimes/>
           </button>
         </ul>
@@ -25,6 +25,7 @@ function Navbar() {
         <FaBars/>
         </button>
       </div>
+       
     </>
   );
 }

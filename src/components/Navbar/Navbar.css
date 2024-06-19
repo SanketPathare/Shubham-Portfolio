@@ -12,6 +12,7 @@
 }
 
 .navbar {
+  top: 0;
   height: 80px;
   padding: 0 2rem;
   background-color: var(--mainColor);
@@ -25,7 +26,7 @@
 }
 
 .nav-container li {
-  
+  letter-spacing: 0.5px;
   font-size: 1.2em;
   font-weight: 500;
   margin: 0 1rem;
@@ -56,11 +57,17 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
+  .navbar{
+    width: 100%;
+  }
   .navbar .nav-btn {
     visibility: visible;
     opacity: 1;
   }
-
+  .nav-container  li  {
+ font-size: 1.8rem;
+  }
   .navbar .nav-container {
     color: #000;
     z-index: 2;
@@ -76,9 +83,15 @@
     gap: 1.5rem;
     background-color: #0db5e3;
     transition: 1s;
+  
+    
   }
-  .navbar .nav-container:hover {
-    color: #fff;
+  .navbar .nav-container li:hover {
+    color: #000;
+    border-bottom:  3px solid ;
+    
+ 
+
   }
 
   .navbar .responsive_nav {

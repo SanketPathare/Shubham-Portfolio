@@ -45,7 +45,7 @@ const Intro = () => {
           </a>
         </div>
       </div>
-      <Experience/>
+      {/* <Experience/> */}
     </section>
   );
 };
